@@ -30,22 +30,25 @@ Phase 2 employs deep learning techniques for panorama stitching. This includes a
 
 ## Repository Structure
 
+```markdown
 .
 ├── Phase1
-│ ├── Outputs
-│ │ ├── mypano1.png
-│ │ ├── mypano2.png
-│ ├── code
-│ │ ├── main.py
-│ │ ├── utils.py
+│   ├── Outputs
+│   │   ├── mypano1.png
+│   │   ├── mypano2.png
+│   ├── code
+│   │   ├── main.py
+│   │   ├── utils.py
 ├── Phase2
-│ ├── deep_output
-│ │ ├── supervisedlos.jpeg
-│ │ ├── unsupervisedlos.jpg
-│ ├── code
-│ │ ├── main.py
-│ │ ├── utils.py
+│   ├── deep_output
+│   │   ├── supervisedlos.jpeg
+│   │   ├── unsupervisedlos.jpg
+│   ├── code
+│   │   ├── main.py
+│   │   ├── utils.py
 └── README.md
+
+```
 
 ## Repository Structure
 The repository is structured as follows:
