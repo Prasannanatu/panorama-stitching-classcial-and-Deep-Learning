@@ -9,6 +9,6 @@
 
 
 -Supervised and Self-Supervised Output:
-| ![image1](./Phase2/deep_output/supervisedlos.jpeg) | ![image2](./Phase1/Outputs/unsuervisedlos.jpg) |
+| ![image1](./Phase2/deep_output/supervisedlos.jpeg) | ![image2](./Phase1/Outputs/unsupervisedlos.jpg) |
 |:--:|:---:|
 | output_1 | output_2|
