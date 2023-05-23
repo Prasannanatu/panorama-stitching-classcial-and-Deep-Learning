@@ -20,8 +20,7 @@
 - [Repository Structure](#repository-structure)
 - [Technologies](#technologies)
 - [Installation & Usage](#installation--usage)
-- [Contributing](#contributing)
-
+- [Reference](#reference)
 
 ## About The Project
 In Phase 1, the project utilizes traditional computer vision methods for stitching together multiple images. This includes Harris Corner Detection, Feature Descriptors, Feature Matching, the RANSAC algorithm, and warping and blending of images.
@@ -33,44 +32,39 @@ Phase 2 employs deep learning techniques for panorama stitching. This includes a
 ```markdown
 .
 ├── Phase1
+│   ├── code
+│   │   ├── Wrapper.py
 │   ├── Outputs
 │   │   ├── mypano1.png
 │   │   ├── mypano2.png
-│   ├── code
-│   │   ├── main.py
-│   │   ├── utils.py
-├── Phase2
+|   ├──Data
+│   │   ├── Test
+│   │   ├── Train
+ Phase2
+│   ├── Checkopints
+│   │   ├──supervised_unsupervised.zip
 │   ├── deep_output
 │   │   ├── supervisedlos.jpeg
 │   │   ├── unsupervisedlos.jpg
 │   ├── code
 │   │   ├── main.py
 │   │   ├── utils.py
-└── README.md
+├──README.md
+└──Report.pdf
 
 ```
+## Technologies Used
 
-## Repository Structure
-The repository is structured as follows:
-- `/Code`: This Folder consist the Wrapper.py code for camera calibration.
-- `/Calibration_Imgs/Outputs/`: Consist of the Acutal and Reprojected corner images.
+This project uses several technologies and methodologies to achieve panorama stitching:
 
+- **Python**: The main programming language used for the implementation of this project.
+- **OpenCV**: A powerful library used extensively for image processing tasks.
+- **NumPy**: Essential for high-performance mathematical computations on multi-dimensional arrays and matrices.
+- **PyTorch**: The deep learning framework used for implementing the Homography Net and Tensor DLT.
+- **Homography Net**: A supervised learning method using a neural network to predict homography between pairs of images.
+- **Tensor Direct Linear Transform (DLT)**: A self-supervised learning method that predicts homographies purely from the image data.
+- **Spatial Transformer**: A differentiable module that performs an explicit geometric transformation on the input image, enabling neural networks to learn how to perform spatial transformations on images.
 
-## Technologies
-
-This project leverages several significant technologies:
-
-- **OpenCV**: A robust library in the computer vision field, utilized here for image processing tasks along with its in-built camera calibration and distortion correction functionalities.
-
-- **NumPy**: An essential Python library for handling high-performance computations on multi-dimensional arrays and matrices, a common requirement in computer vision.
-
-- **Zhang's Method**: The cornerstone of this project, providing an effective and efficient approach to camera calibration by observing a planar pattern from multiple orientations.
-
-- **Optimization Techniques**: Employed within the calibration process to determine the best fit camera parameters, minimizing the discrepancy between observed and projected image points.
-
-- **Distortion Models**: Radial and tangential models are applied for accurate image reconstruction and considered during the calibration process.
-
-- **Matplotlib**: Deployed for visualization of calibration results, offering a clear graphical representation of images with overlaid calibration patterns.
 
 
 ## Installation & Usage
@@ -79,41 +73,36 @@ To run the project locally, follow these steps:
 1. Clone the repository:
 
 ```shell
-git clone https://github.com/Prasannanatu/Zhang-s-Camera-Calibration.git
+git clone https://github.com/Prasannanatu/panorama-stitching-classcial-and-Deep-Learning.git
  ```
  
 Install the required dependencies. You can use the provided requirements.txt file to install the necessary packages. Run the following command:
 
 
 ```bash
-pip install opencv-python numpy matplotlib scipy
- ```
- 
- 
-
- 
-Run the project using the provided scripts or commands. Refer to the documentation or project files for specific instructions on running the Calibration algorithms.
-
- ```bash
-python3 Wrapper.py
+pip install -r requirements.txt
  ```
 
 ## References
 
 The following sources have been instrumental in the development of this project:
 
-1. Z. Zhang. "A Flexible New Technique for Camera Calibration". IEEE Transactions on Pattern Analysis and Machine Intelligence. 2000. [[link]](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr98-71.pdf)
+1. DeTone, D., Malisiewicz, T., & Rabinovich, A. (2016). Deep Image Homography Estimation. arXiv preprint arXiv:1606.03798 [[Link]](https://arxiv.org/pdf/1606.03798.pdf)
+2. Nguyen, T., Chen, S. W., Shivakumar, S. S., Taylor, C. J., & Kumar, V. (2018). Unsupervised Deep Homography: A Fast and Robust Homography Estimation Model. In Proceedings of the European Conference on Computer Vision (ECCV) (pp. 621-637).[[Link]](https://arxiv.org/abs/1709.03966)
 
-2.RBE-549 Computer Vision course project page[[link]](https://rbe549.github.io/spring2023/hw/hw1/).
+3.RBE-549 Computer Vision course project page[[link]](https://rbe549.github.io/spring2023/proj/p1/).
 
 
 ## Tags
--  Camera-Calibration
-- Comupter Vision
-- 3D-Reconstruction
-- Zhang's-Method
-- Optimization
-- Distortion-Correction,
+
+- Homography Estimation
+- Deep Learning
+- Computer Vision
+- Unsupervised Learning
+- Robust Estimation
+- Image Registration
+- Feature Extraction
+- HomographyNet
 
 
 
