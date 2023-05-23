@@ -1,5 +1,14 @@
-The file consist of phase 1 and phase2
-For phase 1 consist Wrapper.py
-for phase 2 supervised and unsupervised network and train and test python files are different
-all the generated data is stored in zip file to reduce size
-all the checkpoints are again zipped 
+#Panorama Stitching
+
+##Outputs:
+
+-Classical Panorama Stitching Output:
+| ![image1](./Phase1/Outputs/mypano1.png) | ![image2](./Phase1/Outputs/mypano2.png) |
+|:--:|:---:|
+| output_1 | output_2|
+
+
+-Supervised and Self-Supervised Output:
+| ![image1](./Phase2/Outputs/mypano1.png) | ![image2](./Phase1/Outputs/mypano2.png) |
+|:--:|:---:|
+| output_1 | output_2|
