@@ -1,6 +1,7 @@
-#Panorama Stitching
+# Panorama Stitching
 
-##Outputs:
+## Outputs
+
 
 -Classical Panorama Stitching Output:
 | ![image1](./Phase1/Outputs/mypano1.png) | ![image2](./Phase1/Outputs/mypano2.png) |
